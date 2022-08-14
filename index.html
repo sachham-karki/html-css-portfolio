@@ -4,36 +4,36 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sachham's Portfolio</title>
+        <link  rel="stylesheet" href="css/styles.css">
     </head>
 
     <body>
         <main>
              <!-- ***********************  ABOUT / PROFILE  *********************** -->
              <header>
-                <h1>Sachham Karki</h1>
-                <h2>Full-Stack Software Developer</h2>
+                <h1  class = "fancy">Sachham Karki</h1>
+                <h2 class="facny intro">Full-Stack Software Developer</h2>
                 <p>An Information Technology graduate ‘majoring in Web and Mobile application development’ and minoring in ‘Network and Systems Computing’. I have experience as a Full Stack Developer along with planning, designing, programming, hosting, version control and testing by using cutting edge tools. I enjoy all aspects of software development with the end goal becoming a Full Stack Developer.</p>
+            </header>
 
-                <p>Add 2<sup>nd</sup> paragraph if you need.</p>
-             </header>
+            <!--    <p>Add 2<sup>nd</sup> paragraph if you need.</p>
+            ---------------- PROJECTS / PORTFOLIO  ---------------- -->
 
-<!-- ---------------- PROJECTS / PORTFOLIO  ---------------- -->
-
-<section>
+<section class="project">
     <h2>Featured Project</h2>
-    <p>This is my HTML and CSS portfolio. I have more projects on my GitHub. Feel free to visit on <a href="https://github.com/sachham-karki?tab=repositories"><u>Sachham Karki GitHub</u></a>.</p>
+    <p>This is my HTML and CSS portfolio. I have more projects on my GitHub. Feel free to visit my <a href="https://github.com/sachham-karki?tab=repositories" target="_blank">GitHub</a>.</p>
 
 
-<section>
+<section id="project">
     <h3>Project Name</h3>
-    <img src="img/project-thumbnail.png" alt="description of image">
+    <img src="img/thumbnail-1.jpg" alt="description of image">
     <p>Summary or description of the project and/or your role in it. Add as many paragraphs as you need.</p>
-    <a href="#" target="_blank">View project / case study</a>
+    <a href="#project-video">View project / case study</a>
   </section>
   <!-- End of Project block. -->
 </section>
   <!-- ***********************  WORK EXPERIENCE  *********************** -->
-  <section>
+  <section class="work">
     <h2>Work Experience</h2>
 
 
@@ -57,7 +57,7 @@
   </section>
   
 <!-- --------------------Education-------------------- -->
-<section>
+<section class="education">
     <h2>Education</h2>
     <section>
         <h3>Victoria University</h3>
@@ -81,8 +81,9 @@
         <li><a href="https://github.com/sachham-karki" target="_blank">Sachham's GitHub </a></li>
         
        </ul>
-       <br><br>
-       <video width = "200" height ="150" controls loop>
+       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+       <center>
+       <video width = "700" height ="150" controls loop id="project-video">
 
         <source src="img/myVideo.mp4" type = "video/mp4">
         <track src="img/video_subtitle.vtt" 
@@ -91,7 +92,7 @@
         srclang="en"
         default>
 
-       </video>
+       </video> </center>
       </footer>
      </main>
     </body>
