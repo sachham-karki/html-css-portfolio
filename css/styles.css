@@ -42,7 +42,8 @@ h3{
 
 }
 .content-wrap{
-    width:900px;
+    max-width:900px;
+    width:85%;
     margin:0 auto;
     padding: 60px 0px;
 }
@@ -66,9 +67,7 @@ h3{
 ----------------------------*/
 header{
     background-color:#2f3061;
-    color:#F7FFF7;
-    text-align:center;
-    
+    color:#F7FFF7;   
 }
 
 /*Project 
@@ -89,15 +88,7 @@ header{
     background: rgba(47, 48, 97, 80%);
 }
 .project-item{
-    overflow:hidden;
-    
-}
-
-.project-item img{
-    float:left;
-    margin-right: 20px;
-   
-
+    overflow:hidden;   
 }
 
 /*Work Experience 
@@ -105,16 +96,18 @@ header{
 .work{
     background-color: #A1C6D7;
 }
-.job-item{
-    display:grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 20px;
-    
-}
+
 /* Education  
 ----------------------------*/
 .education{
-    background-image:url("../img/joanna-kosinska-unsplash.jpg");
+    background-image:url("../img/edu.jpg");
+    background-size:cover;
+    background-position: top right;
+    padding-bottom:100px;
+}
+
+.education p{
+    width:60%;
 }
 
 /* Contact Info
@@ -122,7 +115,6 @@ header{
 footer{
     background-color: #343434;
     color:#F7FFF7;
-    text-align:center;
 }
  
 #project-video{
@@ -132,12 +124,49 @@ footer{
 .contact{
     list-style-type:none;
     padding:0px;
-    display: flex;
-
-
-    justify-content: center;
 }
 .contact a{
         padding:15px;
         display: inline-block;
+}
+
+/* Responsive
+----------------------------*/
+
+@media screen and (min-width:750px){
+    header, footer{
+        text-align:center;
+    }
+    .project-item img{
+        float:left;
+        margin-right: 20px;
+    }
+
+    .job-item{
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;   
+    }
+
+    .contact{
+    display: flex;
+    justify-content: center;
+    }
+}
+
+@media screen and (max-width:749px){
+    h1{
+        font-size: 75px;
+        line-height:0.9;
+        margin-bottom: 20px;
+
+    }
+    
+    h2{
+        line-height:1; 
+    }
+
+    .contact a{
+        padding: 5px;
+    }
 }
